@@ -2,7 +2,9 @@ name: Feed Cron
 
 on:
   schedule:
-    - cron: "0 * * * *" # UTC
+    - cron: "0 1 * * *"   # 日本時間の午前10時
+    - cron: "0 6 * * *"   # 日本時間の午後3時
+    - cron: "0 11 * * *"  # 日本時間の午後8時
   workflow_dispatch:
 
 jobs:
